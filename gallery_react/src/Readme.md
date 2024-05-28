@@ -23,9 +23,13 @@ Composants:
 - composant grille d'images : ArtGrid
 - composant agrandissement : ArtModal
 
-à faire 
+à faire :
 ajouter éléments HTML (input, select) dans le rendu App.jsx
+
 lier les setters(handler) aux champs de saisie
+
 -pour le composant ArtGrid : afficher les images sous formes de grille
+
 -utiliser les props pour filtrer la liste puis les passer à ArtGrid
+
 -ArtModal le créer et le lier avec l'image sélectionnée de la grille(ArtGrid)
