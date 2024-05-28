@@ -17,7 +17,7 @@ Permettre à l'utilisateur de cliquer directement sur image qui veut afficher da
 - parcourir (suivant, précédent) useState
 Parcourir les images simplement pour découvrir la gallerie
 
-Composants : 
+Composants: 
 - composant de recherche : ArtSearch
 - composant des tableaux : ArtMain
 - composant grille d'images : ArtBox
