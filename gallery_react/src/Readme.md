@@ -19,14 +19,14 @@ Parcourir les images simplement pour découvrir la gallerie
 
 Composants: 
 - composant de recherche : ArtSearch
-- composant des tableaux : ArtMain
+- composant des tableaux : ArtWork
 - composant grille d'images : ArtGrid
 - composant agrandissement : ArtModal
 
 à faire :
-ajouter éléments HTML (input, select) dans le rendu App.jsx
+-ajouter éléments HTML (input, select) dans le rendu App.jsx
 
-lier les setters(handler) aux champs de saisie
+-lier les setters(handler) aux champs de saisie
 
 -pour le composant ArtGrid : afficher les images sous formes de grille
 
