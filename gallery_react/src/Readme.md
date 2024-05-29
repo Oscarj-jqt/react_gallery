@@ -1,5 +1,3 @@
-# React + Vite
-
 WEB APP REACT + VITE
 Gallerie d'image / de tableau d'art antique
 
@@ -26,7 +24,6 @@ Composants:
 - composant agrandissement : ArtModal
 
 à faire :
-
 -ajouter éléments HTML (input, select) dans le rendu App.jsx
 
 -lier les setters(handler) aux champs de saisie
