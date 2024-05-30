@@ -1,5 +1,5 @@
 //Composant qui agit après l'élément sélectionné à partir de l'autre composant ArtGrid
-function ArtBox ({name, artist, year, type, country, artwork}) {
+function ArtBox ({name, artist, year, type, country, image}) {
     return (
         //Page principale de la maquette
         <div className = "art-box">
@@ -9,7 +9,7 @@ function ArtBox ({name, artist, year, type, country, artwork}) {
                     <span className="artbox-artist">{artist}</span>
                 </div>
                 <div className="artbox-main">
-                <img className="artbox-image" src={artwork} alt={name} />
+                <img className="artbox-image" src={image} alt={name} />
                 </div>
                 <div className="artbox-second">
                     <span className="artbox-type">{type}</span>
@@ -20,3 +20,5 @@ function ArtBox ({name, artist, year, type, country, artwork}) {
         </div>
     )
 }
+
+export default ArtBox;
