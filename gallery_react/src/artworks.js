@@ -55,9 +55,9 @@ const artworks = [
     },
     {
       id: 7,
-      name: "Statue de Lanceur de Disque",
+      name: "Le Discobole",
       artist: "Myron",
-      year: "Vers 450 av. J.-C.",
+      year: "460-450 avant J.C",
       type: "Sculpture",
       country: "Grèce",
       image: "/path/to/lanceur-de-disque.jpg"

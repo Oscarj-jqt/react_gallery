@@ -33,3 +33,24 @@ condition ternaire seulement avec le jsx
 
 avec useEffect (et un timer par exemple) :
 trouver quelque chose à enregistrer dans le serveur, et le faire interragir avec le client
+
+accéder à un élément html du DOM:
+fonction recherche (écrire le mot sur l'input)
+ce qui écrit est récupéré  : 
+
+import { useRef } from "react";
+
+pas besoinb de faire un usestate pour chacun, on crée un tableau d'objet avec les valeurs
+function TaskInput(onAdd) {
+    on déclare une référence
+    const inputRef = useRef(null)
+
+    return (
+        <div className"flex gap-2">
+        on assigne la référence sur l'élément du DOM que l'on souhaite récupérer
+        <input ref={inputRef} classname="border border-black border-solid rounded-md px-2 w-full>
+        //onAdd lui passe la valeur de l'input
+        <button onClick={() => onAdd(inputRef.current.value)} className=">
+
+    )
+}

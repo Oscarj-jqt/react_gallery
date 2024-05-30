@@ -11,7 +11,8 @@ function ArtSearch() {
   const [country, setCountry] = useState("");
   const [image, setImage] = useState("");
 
-  // On déclare les méthodes 
+  // On déclare les méthodes qui servent à modifier les états 
+//   en fonction de la saisie de l'utilisateur dans l'input
   const nameChangeHandler = (event) => {
     setName(event.target.value);
   };
@@ -40,7 +41,7 @@ function ArtSearch() {
     <div className="art-search">
       <input
         type="text"
-        placeholder="Nom"
+        placeholder="Nom de l'œuvre"
         value={name}
         onChange={nameChangeHandler}
       />
@@ -52,13 +53,13 @@ function ArtSearch() {
       />
       <input
         type="text"
-        placeholder="Type"
+        placeholder="Tableau, sculpture"
         value={type}
         onChange={typeChangeHandler}
       />
       <input
         type="text"
-        placeholder="Année"
+        placeholder="Date"
         value={year}
         onChange={yearChangeHandler}
       />
