@@ -40,7 +40,7 @@ ce qui écrit est récupéré  :
 
 import { useRef } from "react";
 
-pas besoinb de faire un usestate pour chacun, on crée un tableau d'objet avec les valeurs
+pas besoin de faire un usestate pour chacun, on crée un tableau d'objet avec les valeurs
 function TaskInput(onAdd) {
     on déclare une référence
     const inputRef = useRef(null)

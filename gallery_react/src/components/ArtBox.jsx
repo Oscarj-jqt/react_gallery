@@ -1,5 +1,8 @@
+import React from 'react';
+import artworks from '../artworks';
+
 //Composant qui agit après l'élément sélectionné à partir de l'autre composant ArtGrid
-function ArtBox ({name, artist, year, type, country, image}) {
+function ArtBox({ name, artist, year, type, country, image }) {
     return (
         //Page principale de la maquette
         <div className = "art-box">

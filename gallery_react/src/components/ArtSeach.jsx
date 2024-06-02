@@ -1,80 +1,38 @@
-// ArtSearch.jsx
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import artworks from '../artworks';
 
-function ArtSearch() {
-    //On déclare les getters et setters pour la fonction de recherche
-  const [id, setId] = useState("");
-  const [name, setName] = useState("");
-  const [artist, setArtist] = useState("");
-  const [year, setYear] = useState("");
-  const [type, setType] = useState("");
-  const [country, setCountry] = useState("");
-  const [image, setImage] = useState("");
+function ArtSearch({ onSearch }) {
+  // On déclare les références
+  const nameRef = useRef(null);
+  const artistRef = useRef(null);
+  const typeRef = useRef(null);
+  const yearRef = useRef(null);
+  const countryRef = useRef(null);
+  const imageRef = useRef(null);
 
-  // On déclare les méthodes qui servent à modifier les états 
-//   en fonction de la saisie de l'utilisateur dans l'input
-  const nameChangeHandler = (event) => {
-    setName(event.target.value);
-  };
-
-  const artistChangeHandler = (event) => {
-    setArtist(event.target.value);
-  };
-
-  const typeChangeHandler = (event) => {
-    setType(event.target.value);
-  };
-
-  const yearChangeHandler = (event) => {
-    setYear(event.target.value);
-  };
-
-  const countryChangeHandler = (event) => {
-    setCountry(event.target.value);
-  };
-
-  const imageChangeHandler = (url) => {
-    setImage(url);
+  const handleSearch = () => {
+    // On récupère la valeur saisie par l'utilisateur dans le DOM
+    const searchCriteria = {
+      name: nameRef.current.value,
+      artist: artistRef.current.value,
+      type: typeRef.current.value,
+      year: yearRef.current.value,
+      country: countryRef.current.value,
+    };
+    
+    
+    // Appel de la fonction onSearch avec les critères de recherche
+    onSearch(searchCriteria);
   };
 
   return (
     <div className="art-search">
-      <input
-        type="text"
-        placeholder="Nom de l'œuvre"
-        value={name}
-        onChange={nameChangeHandler}
-      />
-      <input
-        type="text"
-        placeholder="Artiste"
-        value={artist}
-        onChange={artistChangeHandler}
-      />
-      <input
-        type="text"
-        placeholder="Tableau, sculpture"
-        value={type}
-        onChange={typeChangeHandler}
-      />
-      <input
-        type="text"
-        placeholder="Date"
-        value={year}
-        onChange={yearChangeHandler}
-      />
-      <input
-        type="text"
-        placeholder="Pays"
-        value={country}
-        onChange={countryChangeHandler}
-      />
-      <input
-        type="text"
-        placeholder="URL de l'image"
-        value={image}
-        onChange={(e) => imageChangeHandler(e.target.value)}
-      />
+      <input ref={nameRef} type="text" placeholder="Nom de l'œuvre" />
+      <input ref={artistRef} type="text" placeholder="Artiste" />
+      <input ref={typeRef} type="text" placeholder="Tableau, sculpture" />
+      <input ref={yearRef} type="text" placeholder="Date" />
+      <input ref={countryRef} type="text" placeholder="Pays" />
+      <button onClick={handleSearch}>Rechercher</button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -31,7 +31,7 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
 .card {
   padding: 2em;
@@ -39,4 +39,47 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
+}
+
+.sidebar {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.art-header {
+  margin-bottom: 20px;
+}
+
+.art-box {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.art-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.art-thumbnail {
+  width: calc(33.333% - 10px);
+  cursor: pointer;
+}
+
+.art-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

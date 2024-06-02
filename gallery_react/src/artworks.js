@@ -6,7 +6,7 @@ const artworks = [
       year: "1902",
       type: "Sculpture",
       country: "France",
-      image: "/path/to/le-penseur.jpg"
+      image: "../public/assets/images/le_penseur.PNG"
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const artworks = [
       year: "1847",
       type: "Peinture",
       country: "France",
-      image: "/path/to/l-ange-dechu.jpg"
+      image: "../public/assets/images/l'ange_déchu.PNG"
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const artworks = [
       year: "1508-1512",
       type: "Peinture murale",
       country: "Italie",
-      image: "/path/to/la-creation-d-adam.jpg"
+      image: "../public/assets/images/la_création.PNG"
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const artworks = [
       year: "1819",
       type: "Peinture",
       country: "Royaume-Uni",
-      image: "/path/to/la-chute-de-babylone.jpg"
+      image: "../public/assets/images/chute_babylone.PNG"
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ const artworks = [
       year: "1787",
       type: "Peinture",
       country: "France",
-      image: "/path/to/la-mort-de-socrate.jpg"
+      image: "../public/assets/images/mort_socrate.PNG"
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ const artworks = [
       year: "1498-1499",
       type: "Sculpture",
       country: "Italie",
-      image: "/path/to/la-pieta.jpg"
+      image: "../public/assets/images/la_pietà.PNG"
     },
     {
       id: 7,
@@ -60,16 +60,16 @@ const artworks = [
       year: "460-450 avant J.C",
       type: "Sculpture",
       country: "Grèce",
-      image: "/path/to/lanceur-de-disque.jpg"
+      image: "../public/assets/images/le_discobole.PNG"
     },
     {
       id: 8,
-      name: "Le Dieu du Nil",
+      name: "Le Dieu Nil",
       artist: "Inconnu",
       year: "Ier siècle apr. J.-C.",
       type: "Sculpture",
       country: "Rome antique",
-      image: "/path/to/dieu-du-nil.jpg"
+      image: "../public/assets/images/dieu_nil.PNG"
     }
     
     
