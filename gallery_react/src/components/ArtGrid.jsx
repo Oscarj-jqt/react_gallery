@@ -11,7 +11,7 @@ function ArtGrid({ artworks, onSelect }) {
                 <div key={artwork.id} className="art-thumbnail" onClick={() => onSelect(artwork.image)}>
                     {/* onSelect est la fonction appelée quand on clic, elle récupère son id */}
                     {/* styliser cette classe en petit cadre d'une taille précise */}
-                    <img src="{artwork.image" alt="{artwork.name}" />
+                    <img src="{artwork.image}" alt="{artwork.name}" />
                 </div>
             ))}
         </div>
