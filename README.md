@@ -38,4 +38,5 @@ Cette mini-application permet aux utilisateurs de parcourir une collection d'œu
 
 
 
+
 Projet Hetic réalisé par : Oscar, Hamidou, Aryles et Issa.
