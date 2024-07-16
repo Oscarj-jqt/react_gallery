@@ -1,7 +1,5 @@
 # react_gallery
 
-Mini application web d'une gallerie d'art réalisé avec React et Vite 
-
 Une application web de galerie d'art présentant des œuvres d'art antiques, développée avec React et Vite.
 
 ## Description
